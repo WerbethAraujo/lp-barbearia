@@ -33,6 +33,7 @@
      align-items: center;
      justify-content: center;
      gap: 16px;
+ 
 
      h1{
         text-align: center;
@@ -87,3 +88,48 @@
         }
     }
 }
+
+.about{
+   background: $primary-normal;
+   overflow: hidden;
+   color: $white-normal
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 34px 14px 64px 14px;
+
+    div{
+        flex: 1;
+    }
+
+    .about-banner{
+        img{
+            max-width: 570px;
+        }
+    }
+
+    .about-description{
+        h2{
+            font-size: 38px;
+            margin-bottom: 24px;
+        }
+
+        p{
+            margin-bottom: 14px;
+            line-height: 150%;
+        }
+   
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .about-content{
+        flex-direction: column;
+    }
+}
+
