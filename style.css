@@ -258,6 +258,20 @@ i {
     flex-direction: column;
   }
 }
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  gap: 24px;
+  color: #fff;
+}
+footer .footer-icons {
+  display: flex;
+  gap: 8px;
+}
+
 * {
   padding: 0;
   margin: 0;
