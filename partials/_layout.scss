@@ -229,3 +229,47 @@ footer{
     }
 }
 
+.btn-whats{
+    position: fixed;
+    right: 24px;
+    bottom: 14px;
+    z-index: 100;
+
+    img{
+        max-width: 74px;
+        transition: all .4s;
+    }
+
+    img:hover{
+       transform: scale(1.1); 
+    }
+}
+
+.btn-whats span{
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -144%;
+    background-color: $black-normal;
+    color: $white-normal;
+    font-style: italic;
+    padding: 4px 8px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity .5s;
+
+}
+
+.btn-whats:hover span{
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px){
+    .btn-whats img{
+        max-width: 64px;
+    }
+    
+}
+
